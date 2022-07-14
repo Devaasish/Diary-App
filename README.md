@@ -1,2 +1,2 @@
 # Diary-App
-## Feel, Write, Enjoy!
+### Feel, Write, Enjoy!
