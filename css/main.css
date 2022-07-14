@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+    flex-wrap: wrap;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Password Styles */
+.password-box {
+    display: block;
+    text-align: center;
+    position: absolute;
+    background: rgb(3, 1, 63);
+    padding: 25px 25px 227px 25px;
+    width: 100%;
+}
+
+.decorate {
+    color: yellow;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 20px 50px 20px;
+}
+
+.box {
+    font-size: 25px;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    margin: 20px;
+}
+
+.btns {
+    display: grid;
+    width: 96%;
+    margin-top: 90px;
+}
+
+.btns button {
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background: green;
+    border: 1px solid green;
+    color: white;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+.btns button:hover {
+    background: transparent;
+    border: 1px solid white;
+}
+
+
+.notes {
+    display: flex;
+    height: 100%;
+}
+
+.notes__sidebar {
+    border-right: 2px solid #dddddd;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+}
+
+.notes__add {
+    background: #190095;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.notes__add:hover {
+    background: #2511de;
+}
+
+.notes__list-item {
+    cursor: pointer;
+}
+
+.notes__list-item--selected {
+    background: #eeeeee;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.notes__small-title,
+.notes__small-updated {
+    padding: 10px;
+}
+
+.notes__small-title {
+    font-size: 1.2em;
+}
+
+.notes__small-body {
+    padding: 0 10px;
+}
+
+.notes__small-updated {
+    color: #aaaaaa;
+    font-style: italic;
+    text-align: right;
+}
+
+.notes__preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.notes__title,
+.notes__body {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.notes__title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #3928ee;
+}
+
+.notes__body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+}
